@@ -5,7 +5,7 @@
 ## Documents CSS
 
 Nous maintenons une table des matières en haut de chaque fichier CSS. Celle-ci indique les sections dans le document.
-Chacune d'elle est préfixée avec un symbole `$`. Ainsi, une recherche pour `$[nom de la section]` ne donnera que des résultats qui sont des sections.
+Chacune d'elles est préfixée avec un symbole `$`. Ainsi, une recherche pour `$[nom de la section]` ne donnera que des résultats qui sont des sections.
 
 ### Syntaxe et formatage
 Nous utilisons du CSS multi-ligne pour simplifier le contrôle de version (c'est un cauchemar d'effectuer un diff sur du CSS mono-ligne), et nous trions les déclarations CSS par pertinence… **pas** alphabétiquement.
