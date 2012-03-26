@@ -22,16 +22,16 @@ Pour avoir un exemple de la structure et du formatage que nous privilégions dan
 * [jasoncale.com/&hellip;/5-dont-format-your-css-onto-one-line](http://jasoncale.com/articles/5-dont-format-your-css-onto-one-line)
 
 
-## Comments
+## Commentaires
 
-Comment as much as you can as often as you can. Where it might be useful, include a commented out piece of markup which can help put the current CSS into context.
+Commentez autant que possible, aussi souvent que possible. Là où ça pourrait être utile, incluez un petit bout de HTML en commentaire pour aider à situer le CSS dans son contexte.
 
-Be verbose, go wild, CSS will be minified before it hits live servers.
+Soyez bavard ! Lâchez-vous ! Le CSS sera minifié avant d'atteindre les serveurs de prod, de toute façon.
 
 
-## Indenting
+## Indentation
 
-For each level of markup nesting, try and indent your CSS to match. For example:
+Pour chaque niveau de profondeur dans le HTML, essayez d'indenter votre CSS pour coller au mieux. Par exemple :
 
     .nav{}
         .nav li{}
@@ -40,14 +40,14 @@ For each level of markup nesting, try and indent your CSS to match. For example:
     .promo{}
         .promo p{}
 
-Also write vendor prefixed CSS so that colons all line up, thus:
+
+Et aussi, écrivez vos déclarations avec préfixes navigateurs de sorte à aligner les double-points, comme ceci :
 
     -webkit-border-radius:4px;
        -moz-border-radius:4px;
             border-radius:4px;
 
-This means that we can quickly scan down and see that they are all set to 4px, but more importantly&mdash;if our text editor supports it&mdash;we can type in columns to change all the values at once.
-
+Ainsi, on peut parcourir la feuille de style en diagonale et voir qu'ils sont tous réglés sur 4 pixels, mais plus important : si votre éditeur le permet, vous pouvez taper en colonnes pour tous les changer d'un coup.
 
 ## Building components
 
