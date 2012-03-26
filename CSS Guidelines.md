@@ -7,17 +7,16 @@
 Nous maintenons une table des matières en haut de chaque fichier CSS. Celle-ci indique les sections dans le document.
 Chacune d'elle est préfixée avec un symbole `$`. Ainsi, une recherche pour `$[nom de la section]` ne donnera que des résultats qui sont des sections.
 
-### Syntax and formatting
+### Syntaxe et formatage
+Nous utilisons du CSS multi-ligne pour simplifier le contrôle de version (c'est un cauchemar d'effectuer un diff sur du CSS mono-ligne), et nous trions les déclarations CSS par pertinence… **pas** alphabétiquement.
 
-We use multi-line CSS to help with version control (diffing single line CSS is a nightmare) and we order CSS declarations by relevance, **not** alphabetically.
+Nous utilisons des sélecteurs limités par des tirets, en minuscules : `.pasBien{}`, `.pas_bien_non_plus{}` mais `.celui-ci-est-bien{}`.
 
-We use hyphen delimited, lowercase selectors: `.thisIsBad{}`, `.this_is_also_bad{}` but `.this-is-correct{}`.
+Toujours laisser un dernier point-virgule après la dernière déclaration d'un ruleset, pour éviter toute confusion ou erreur de syntaxe au cours de la vie du document.
 
-Always use a trailing semi-colon on the last declaration in a ruleset to avoid any potential confusion and syntax errors over the life of the document.
+Pour avoir un exemple de la structure et du formatage que nous privilégions dans nos fichiers CSS, jetez un œil à [github.com/csswizardry/vanilla/&hellip;/style.css](http://github.com/csswizardry/vanilla/blob/master/css/style.css).
 
-For an example of our preferred CSS file formatting and structure please see [github.com/csswizardry/vanilla/&hellip;/style.css](http://github.com/csswizardry/vanilla/blob/master/css/style.css)
-
-**Read:**
+**À lire :**
 
 * [coding.smashingmagazine.com/&hellip;/writing-css-for-others](http://coding.smashingmagazine.com/2011/08/26/writing-css-for-others)
 * [jasoncale.com/&hellip;/5-dont-format-your-css-onto-one-line](http://jasoncale.com/articles/5-dont-format-your-css-onto-one-line)
