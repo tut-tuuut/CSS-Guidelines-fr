@@ -49,26 +49,26 @@ Et aussi, écrivez vos déclarations avec préfixes navigateurs de sorte à alig
 
 Ainsi, on peut parcourir la feuille de style en diagonale et voir qu'ils sont tous réglés sur 4 pixels, mais plus important : si votre éditeur le permet, vous pouvez taper en colonnes pour tous les changer d'un coup.
 
-## Building components
+## Ajouter des composants
 
-When building a new component write markup **before** CSS. This means you can visually see which CSS properties are naturally inherited and thus avoid reapplying redundant styles.
+Si vous construisez un nouveau composant, écrivez le HTML **avant** le CSS. Ainsi, vous pourrez visualiser quelles propriétés CSS sont hérités naturellement, et éviter de réappliquer des styles redondants.
 
 
-## OOCSS
+## CSS orienté objet
 
-When building components try and keep a DRY, OO frame of mind.
+En concevant vos composants, essayez de garder à l'esprit une structure de type DRY (don't repeat yourself) et orientée objet.
 
-Instead of building dozens of unique components, try and spot repeated design patterns abstract them; build these skeletons as base ‘objects’ and then peg classes onto these to extend their styling for more unique circumstances.
+Au lieu de construire des douzaines de composants indépendants, essayez de repérer les motifs qui se répètent ; construisez ces squelettes comme des « objets » de base, et ajoutez-leur des classes pour adapter leur apparence à leurs spécificités.
 
-If you have to build a new component split it into structure and skin; build the structure of the component using very generic classes so that we can reuse that construct and then use more specific classes to skin it up and add design treatments.
+Si vous avez un nouveau composant à construire, séparez-en la structure et l'apparence ; construisez la structure du composant à l'aide de classes très génériques. Ainsi, il sera possible de réutiliser le « constructeur » et d'ajouter un design spécifique ensuite.
 
-**Read:**
+**À lire :**
 
 * [csswizardry.com/&hellip;/the-nav-abstraction](http://csswizardry.com/2011/09/the-nav-abstraction)
 * [stubbornella.org/&hellip;/the-media-object-saves-hundreds-of-lines-of-code](http://stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code)
 
 
-## Layout
+## Structure générale
 
 All components should be left totally free of widths; your components should always remain fluid and their widths should be governed by a grid system.
 
