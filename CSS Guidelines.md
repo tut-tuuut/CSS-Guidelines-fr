@@ -70,13 +70,14 @@ Si vous avez un nouveau composant à construire, séparez-en la structure et l'a
 
 ## Structure générale
 
+Tous les composants devraient être totalement dépourvus de largeurs ; vos composants devraient toujours rester élastiques, leurs largeurs étant fixées par un système de grille.
 All components should be left totally free of widths; your components should always remain fluid and their widths should be governed by a grid system.
 
-Heights should **never** be be applied to elements. Heights should only be applied to things which had dimensions _before_ they entered the site (i.e. images and sprites). Never ever set heights on `p`s, `ul`s, `div`s, anything. You can normally achieve the desired effect with line-heights which are far more flexible.
+Il ne faut **jamais** appliquer de hauteur aux éléments. Il ne faudrait appliquer de hauteur qu'aux choses qui avaient des dimensions _avant_ d'atterrir sur le site (les images et les sprites). Il ne faut jamais, au grand jamais, donner de hauteur aux éléments `p`, `ul`, `div`, et ainsi de suite. Normalement, vous devriez obtenir l'effet désiré avec des propriétés line-height, qui sont beaucoup plus flexibles.
 
-Grid systems should be thought of as shelves. They contain content but are not content in themselves. You put up your shelves then fill them with your stuff.
+Considérez les grilles comme des étagères. Elles contiennent du contenu, mais ne sont pas du contenu elles-mêmes. Vous assemblez vos étagères, ensuite vous les remplissez de trucs.
 
-You should never apply any styles to a grid item, they are for layout purposes only. Never, under any circumstances, apply box-model properties to a grid item.
+Vous ne devriez jamais appliquer de style sur un élément de grille : ils sont là uniquement à des fins de mise en page. Quelles que soient les circonstances, n'appliquez jamais de propriété de type box-model à un élément de grille.
 
 
 ## Sizing
