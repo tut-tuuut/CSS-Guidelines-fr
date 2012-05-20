@@ -97,27 +97,27 @@ Nous voulons éviter de définir les tailles de police encore et encore. Pour y 
 
 Avant d'ajouter une déclaration font-size, voyez si une classe pour cette taille-là n'existe pas déjà.
 
-**Read:**
+**À lire :**
 
 * [csswizardry.com/&hellip;/pragmatic-practical-font-sizing-in-css](http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css)
 
 
-## Shorthand
+## Raccourcis
 
-It might be tempting to use declarations like `background:red;` but in doing so what we are actually saying is ‘I want no image to scroll, aligned top left and repeating X and Y and a background colour of red’. Nine times out of ten this won’t cause any issues but that one time it does is annoying enough to warrant not using such shorthand. Instead use `background-color:red;`.
+Cela pourrait être tentant d'utiliser des déclarations comme `background:red;`, mais en procédant ainsi, ce qu'on déclare réellement, c'est « je ne veux pas d'image d'arrière-plan, qu'elle ne soit pas fixée au défilement, qu'elle soit alignée en haut à gauche, qu'elle se répète sur les axes X et Y, et aussi une couleur de fond rouge ». Neuf fois sur dix, cela ne posera aucun problème… mais quand il y aura un problème, il sera suffisamment ennuyeux pour vous vacciner contre ce genre de raccourcis. À la place, utilisez plutôt  `background-color: red;`.
 
-Similarly, declarations like `margin:0;` are nice and short, but **be explicit**. If you’re actually only really wanting to affect the margin on the bottom of an element then it is more appropriate to use `margin-bottom:0;`.
+De même, les déclaractions comme `margin: 0;` sont chic et courtes, mais **soyez explicite**. Si en réalité vous voulez simplement modifier la marge en dessous d'un élément, utiliser `margin-bottom: 0;` est plus approprié.
 
-Be explicit in which properties you set and take care to not inadvertently unset others with shorthand. E.g. if you only want to remove the bottom margin on an element then there is no sense in blitzing all margins with `margin:0;`.
+Précisez explicitement quelles propriétés vous modifiez et prenez garde de ne pas modifier par inadvertance dans un raccourci. Par exemple, si vous voulez simplement supprimer la marge en dessous d'un élément, cela n'a pas de sens de toutes les annuler avec `margin: 0;`.
 
-Shorthand is good, but easily misused.
+Les raccourcis, c'est bien, mais c'est souvent mal utilisé.
 
 
-## Selectors
+## Sélecteurs
 
-Keep selectors efficient and portable.
+Gardez vos sélecteurs efficaces et transposables.
 
-Heavily location-based selectors are bad for a number of reasons. For example, take `.sidebar h3 span{}`. This selector is too location-based and thus we cannot move that `span` outside of a `h3` outside of `.sidebar` and maintain styling.
+Les sélecteurs qui s'appuient lourdement sur la position sont mauvais, pour bon nombre de raisons. Par exemple, prenons `.sidebar h3 span {}`. Ce sélecteur est trop basé sur la position, et ainsi, nous ne pouvons pas déplacer ce `span` en dehors d'un `h3` hors d'un `.sidebar` en gardant la mise en forme.
 
 Selectors which are too long also introduce performance issues; the more checks in a selector (e.g. `.sidebar h3 span` has three checks, `.content ul p a` has four), the more work the browser has to do.
 
