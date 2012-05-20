@@ -70,7 +70,7 @@ Si vous avez un nouveau composant à construire, séparez-en la structure et l'a
 
 ## Structure générale
 
-Tous les composants devraient être totalement dépourvus de largeurs ; vos composants devraient toujours rester élastiques, leurs largeurs étant fixées par un système de grille.
+Tous les composants devraient être totalement dépourvus de largeur ; vos composants devraient toujours rester élastiques, leurs largeurs étant fixées par un système de grille.
 All components should be left totally free of widths; your components should always remain fluid and their widths should be governed by a grid system.
 
 Il ne faut **jamais** appliquer de hauteur aux éléments. Il ne faudrait appliquer de hauteur qu'aux choses qui avaient des dimensions _avant_ d'atterrir sur le site (les images et les sprites). Il ne faut jamais, au grand jamais, donner de hauteur aux éléments `p`, `ul`, `div`, et ainsi de suite. Normalement, vous devriez obtenir l'effet désiré avec des propriétés line-height, qui sont beaucoup plus flexibles.
@@ -80,22 +80,22 @@ Considérez les grilles comme des étagères. Elles contiennent du contenu, mais
 Vous ne devriez jamais appliquer de style sur un élément de grille : ils sont là uniquement à des fins de mise en page. Quelles que soient les circonstances, n'appliquez jamais de propriété de type box-model à un élément de grille.
 
 
-## Sizing
+## Dimensionnement
 
-We use a combination of methods for sizing UIs. Percentages, pixels, ems, rems and nothing at all.
+Nous utilisons une combinaison de plusieurs méthodes pour dimensionner les interfaces. Pourcentages, pixels, ems, rems et rien du tout.
 
-**Read:**
+**À lire :**
 
 * [csswizardry.com/&hellip;/measuring-and-sizing-uis-2011-style](http://csswizardry.com/2011/12/measuring-and-sizing-uis-2011-style)
 
 
-## Font sizing
+## Tailles des polices
 
-We use rems (with a pixel fallback for older browsers only). We do not want to define any font sizes in pixels as standard. We define line heights unitlessly everywhere **unless** we are trying to align text to known heights.
+Nous utilisons des rems (avec un fallback en pixels, pour les plus vieux navigateurs seulement). Il n'est pas question de définir une taille de police en pixels par défaut. Nous définissons les hauteurs de ligne sans unité, **sauf** si nous voulons aligner le texte avec des hauteurs connues.
 
-We want to avoid defining font sizes over and over; to achieve this we have a predefined scale of font sizes tethered to classes. We can recycle these rather than having to declare styles over and over.
+Nous voulons éviter de définir les tailles de police encore et encore. Pour y arriver, nous avons une échelle prédéfinie de tailles de polices associées à des classes. Nous les recyclons au lieu de redéclarer les propriété de taille plusieurs fois.
 
-Before writing another font-size declaration, see if a class for it already exists.
+Avant d'ajouter une déclaration font-size, voyez si une classe pour cette taille-là n'existe pas déjà.
 
 **Read:**
 
